@@ -1,4 +1,4 @@
-# GAImpleSpec
+# GAImplSpec
 ## Overview
 Implementing the Google Analytics tracking code can result in 100+ lines of code. In addition, this code is changed every day as site improvement and analysis items change. As the number of changes increases, the possibility that an error will occur in the measurement content increases.
 
