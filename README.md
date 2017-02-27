@@ -9,7 +9,8 @@ This program ins for executing automatic test of the Google Analytics tracking c
 
 ## Installation
 ```
-$ git clone git@github.com:1987yama3/ga-automate-test.git
+$ git clone git@github.com:sem-technology/ga-impl-spec.git
+$ cd ga-impl-spec
 $ npm install
 $ npm install -g gulp
 $ cp config.sample.json config.json
@@ -25,7 +26,7 @@ $ gulp test
 or
 
 ```
-$ gulp test --file test/spec/sample.test.js
+$ gulp test --file test/sample.test.js
 ```
 
 ### Parameters
@@ -39,9 +40,9 @@ $ gulp test --file test/spec/sample.test.js
 ```js
 import assert from 'assert';
 import uuid from 'uuid';
-import * as ga from '../../lib/ga';
-import {getHitLogs} from '../../lib/server';
-import config from '../../config';
+import * as ga from '../lib/ga';
+import {getHitLogs} from '../lib/server';
+import config from '../config';
 
 let testId;
 describe('http://localhost:8888/index.html', () => {
