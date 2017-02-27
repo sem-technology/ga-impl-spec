@@ -1,6 +1,6 @@
 {
   "port": 8888,
   "baseUrl": "http://localhost:8888",
-  "static_path": "./test/www/",
+  "static_path": "./public_html/",
   "trackingId": "UA-xxxxxxxx-y"
 }
