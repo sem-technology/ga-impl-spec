@@ -1,8 +1,8 @@
 import assert from 'assert';
 import uuid from 'uuid';
-import * as ga from '../../lib/ga';
-import {getHitLogs} from '../../lib/server';
-import config from '../../config';
+import * as ga from '../lib/ga';
+import {getHitLogs} from '../lib/server';
+import config from '../config';
 
 let testId; 
 

@@ -27,7 +27,7 @@ gulp.task('eslint', () => {
 
 gulp.task('analytics:update', (done) => {
   return download('https://www.google-analytics.com/analytics.js')
-    .pipe(gulp.dest('./test/www/'));
+    .pipe(gulp.dest('./public_html/'));
 });
 
 gulp.task('test:server:start', (done) => {
@@ -45,7 +45,7 @@ gulp.task('test:server:stop', (done) => {
 
 gulp.task('test:protractor', () => {
   const argv = minimist(process.argv.slice(2));
-  const file = argv.file || './test/spec/**/*.test.js';
+  const file = argv.file || './test/**/*.test.js';
   if (argv.gtm_preview) {
     process.env.GTM_PREVIEW = argv.gtm_preview;
   }
